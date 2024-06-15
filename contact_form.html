@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact_form.css">
+</head>
+<body>
+
+    <header>
+        <div class="container1">
+            <div class="logo-container">
+                <a href="main.html">
+                    <img src="ferrari_logo.png" alt="Ferrari Logo">
+                </a>
+                <h1>Contact Ferrari</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="models.html">Models</a></li>
+                    <li><a href="contact_form.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form action="your-email-processing-script.php" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name.." required>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email.." required>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject.." required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Briefly explain about your thought here..." style="height:200px" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <footer>
+        <div class="container1">
+            <p>&copy; 2024 Ferrari. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

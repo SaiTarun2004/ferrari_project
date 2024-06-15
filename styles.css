@@ -1,0 +1,273 @@
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* Basic Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  min-height: 100vh;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.signup{
+  width:360px;
+  height:620px;
+  margin: auto;
+  background-color: white;
+  border-radius: 3px;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  /* Use flexbox */
+  justify-content: space-between;
+  /* Space items evenly */
+  align-items: center;
+  /* Center items vertically */
+  position: relative;
+  /* Add position relative */
+  transition: background-color 0.3s ease;
+  /* Smooth transition */
+}
+
+.logo-container {
+  display: flex;
+  /* Use flexbox */
+  align-items: center;
+  /* Align items vertically */
+}
+
+.logo-container img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.login{
+  width:50px;
+  height:25px;
+  border-radius: 12px;
+  
+  cursor: pointer;
+  border: #ff4500;
+  background-color: #c7917e;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.login:hover{
+  background-color: #3e92ab;
+  transition: background-color 0.15s;
+}
+header h1 {
+  font-size: 36px;
+  margin: 0;
+  /* Remove default margin */
+  margin-left: auto;
+  /* Move the h1 to the right */
+}
+
+
+nav ul {
+  list-style-type: none;
+ 
+  /* Hide the nav menu by default */
+  position: absolute;
+  top: 100%;
+  /* Position below the header */
+  left: 0;
+  background-color: #333;
+  /* Background color for the menu */
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+  /* Center menu items horizontally */
+}
+
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+  padding: 5px 10px;
+  /* Add padding */
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+  /* Remove margin from the last item */
+}
+
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Reveal the nav menu when hovering over the header */
+header:hover nav ul {
+  display: block;
+}
+
+#hero {
+  background-image: linear-gradient(to right, #FFFF00, #000000);
+  color: #fff;
+  /* Text color */
+  text-align: center;
+  padding: 260px 20px;
+  /* Adjust padding as needed */
+  margin-bottom: 10px;
+  /* Adjust margin as needed */
+}
+
+
+#hero h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  background: linear-gradient(to left, #ff4500, #000000);
+  /* Gradient text color */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#hero p {
+  font-size: 20px;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  background: linear-gradient(to left, #ff4500, #000000);
+  /* Gradient text color */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #c00;
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #900;
+}
+
+.loadmore {
+  display: block;
+  background: linear-gradient(to right, #ff4500, #000000);
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.loadmore:hover {
+  background: linear-gradient(to left, #ff4500, #000000);
+}
+
+#about,
+#models,
+#experience {
+  padding: 50px 0;
+}
+
+#about .container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Shadow */
+}
+
+#models .container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Shadow */
+}
+
+#experience .container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Shadow */
+  margin-bottom: 5%;
+  position: relative;
+  /* Set position relative for positioning the button */
+}
+
+#experience .btn {
+  position: absolute;
+  /* Set position absolute for positioning the button */
+  bottom: 20px;
+  /* Adjust the distance from the bottom */
+  right: 20px;
+  /* Adjust the distance from the right */
+}
+
+#experience .loadmore {
+  display: block;
+  margin: 20px auto 0;
+  /* Center horizontally with top margin */
+  text-align: center;
+  /* Center text */
+}
+
+.model-card {
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.model-card:hover {
+  transform: translateY(-5px);
+}
+
+.model-card img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
